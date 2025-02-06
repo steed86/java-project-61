@@ -14,8 +14,8 @@ public class Engine {
     }
     public static int getRandomInt() {
         //метод генерации случайного числа по-умолчанию -  из промежутка от 1 до 99
-        int min = 1;
-        int max = 99;
+        final int min = 1;
+        final int max = 99;
         int range = max - min + 1;
         return (int) (Math.random() * range) + min;
     }

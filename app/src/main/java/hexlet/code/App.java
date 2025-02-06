@@ -24,19 +24,25 @@ public class App {
         String gameChoice = scanner.next();
         int gameChoiceInt = Integer.parseInt(gameChoice);
 
-        int roundsCount = 3;
+        final int roundsCount = 3;
+        final int greetChoiceCode = 1;
+        final int evenChoiceCode = 2;
+        final int calcChoiceCode = 3;
+        final int gcdChoiceCode = 4;
+        final int progressionChoiceCode = 5;
+        final int primeChoiceCode = 6;
 
-        if (gameChoiceInt == 1) {
+        if (gameChoiceInt == greetChoiceCode) {
             String userName = Cli.askNameAndGreet();
-        } else if (gameChoiceInt == 2) {
+        } else if (gameChoiceInt == evenChoiceCode) {
             Even.play(roundsCount);
-        } else if (gameChoiceInt == 3) {
+        } else if (gameChoiceInt == calcChoiceCode) {
             Calc.play(roundsCount);
-        } else if (gameChoiceInt == 4) {
+        } else if (gameChoiceInt == gcdChoiceCode) {
             GCD.play(roundsCount);
-        } else if (gameChoiceInt == 5) {
+        } else if (gameChoiceInt == progressionChoiceCode) {
             Progression.play(roundsCount);
-        } else if (gameChoiceInt == 6) {
+        } else if (gameChoiceInt == primeChoiceCode) {
             Prime.play(roundsCount);
         }
     }

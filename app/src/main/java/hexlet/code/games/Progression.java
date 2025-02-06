@@ -8,10 +8,10 @@ public class Progression {
         System.out.println("What number is missing in the progression?");
         boolean isAnswerCorrect = true;
         int correctAnswerCount = 0;
-        int minProgressionLength = 5;
-        int maxProgressionLength = 10;
-        int minCommonDifference = 1;
-        int maxCommonDifference = 5;
+        final int minProgressionLength = 5;
+        final int maxProgressionLength = 10;
+        final int minCommonDifference = 1;
+        final int maxCommonDifference = 5;
         int firstElementOfArray = 0;
         while (correctAnswerCount < roundCount) {
             int progressionLength = Engine.getRandomInt(minProgressionLength, maxProgressionLength);

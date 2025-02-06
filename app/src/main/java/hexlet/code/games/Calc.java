@@ -42,15 +42,18 @@ public class Calc {
 
     public static String getRandomOperator() {
         String operatorStr = "";
-        int minOperatorCode = 1;
-        int maxOperatorCode = 3;
+        final int minOperatorCode = 1;
+        final int maxOperatorCode = 3;
+        final int additionOperatorCode = 1;
+        final int subtractionOperatorCode = 2;
+        final int multiplicationOperatorCode = 3;
         int operatorCode = Engine.getRandomInt(minOperatorCode, maxOperatorCode);
 
-        if (operatorCode == 1) {
+        if (operatorCode == additionOperatorCode) {
             operatorStr = "+";
-        } else if (operatorCode == 2) {
+        } else if (operatorCode == subtractionOperatorCode) {
             operatorStr = "-";
-        } else if (operatorCode == 3) {
+        } else if (operatorCode == multiplicationOperatorCode) {
             operatorStr = "*";
         }
 
