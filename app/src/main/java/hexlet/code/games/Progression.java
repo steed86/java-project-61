@@ -25,7 +25,7 @@ public class Progression {
                 } else {
                     progression[i] = progression[i - 1] + progressionCommonDifference;
                 }
-                String progressionElement = "";
+                String progressionElement;
                 if (i == hiddenElement) {
                     progressionElement = "..";
                 } else {

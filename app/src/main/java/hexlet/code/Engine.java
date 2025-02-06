@@ -31,8 +31,7 @@ public class Engine {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Question: " + question);
         System.out.print("Your answer: ");
-        String userAnswer = scanner.next();
-        return userAnswer;
+        return scanner.next();
     }
 
     public static void printSuccessMessage() {

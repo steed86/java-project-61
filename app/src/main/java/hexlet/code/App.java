@@ -33,7 +33,7 @@ public class App {
         final int primeChoiceCode = 6;
 
         if (gameChoiceInt == greetChoiceCode) {
-            String userName = Cli.askNameAndGreet();
+            Cli.askNameAndGreet();
         } else if (gameChoiceInt == evenChoiceCode) {
             Even.play(roundsCount);
         } else if (gameChoiceInt == calcChoiceCode) {
