@@ -9,7 +9,7 @@ public class Calc {
         boolean isAnswerCorrect = false;
         int correctAnswerCount = 0;
 
-        while(correctAnswerCount < roundsCount) {
+        while (correctAnswerCount < roundsCount) {
             int int1 = Engine.getRandomInt();
             int int2 = Engine.getRandomInt();
             String operatorStr = getRandomOperator();
@@ -44,7 +44,7 @@ public class Calc {
         String operatorStr = "";
         int minOperatorCode = 1;
         int maxOperatorCode = 3;
-        int operatorCode = Engine.getRandomInt(minOperatorCode,maxOperatorCode);
+        int operatorCode = Engine.getRandomInt(minOperatorCode, maxOperatorCode);
 
         if (operatorCode == 1) {
             operatorStr = "+";

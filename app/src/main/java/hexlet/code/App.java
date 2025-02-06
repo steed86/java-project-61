@@ -28,8 +28,7 @@ public class App {
 
         if (gameChoiceInt == 1) {
             String userName = Cli.askNameAndGreet();
-        }
-        else if (gameChoiceInt == 2) {
+        } else if (gameChoiceInt == 2) {
             Even.play(roundsCount);
         } else if (gameChoiceInt == 3) {
             Calc.play(roundsCount);

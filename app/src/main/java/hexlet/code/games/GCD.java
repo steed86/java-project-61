@@ -8,10 +8,12 @@ public class GCD {
         System.out.println("Find the greatest common divisor of given numbers.");
         boolean isAnswerCorrect = true;
         int correctAnswerCount = 0;
-        while(correctAnswerCount < roundCount) {
+        while (correctAnswerCount < roundCount) {
             int questionNumber1 = Engine.getRandomInt();
             int questionNumber2 = Engine.getRandomInt();
-            while (questionNumber2 < questionNumber1) { //Переподбираем второе число пока оно не будет равно или больше чем первое
+
+            //Переподбираем второе число пока оно не будет равно или больше чем первое
+            while (questionNumber2 < questionNumber1) {
                 questionNumber2 = Engine.getRandomInt();
             }
             int correctAnswer = 0;

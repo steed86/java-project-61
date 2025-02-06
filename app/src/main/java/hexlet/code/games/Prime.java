@@ -8,7 +8,7 @@ public class Prime {
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
         boolean isAnswerCorrect = true;
         int correctAnswerCount = 0;
-        while(correctAnswerCount < roundCount) {
+        while (correctAnswerCount < roundCount) {
             int questionNumber = Engine.getRandomInt();
             String correctAnswer;
 

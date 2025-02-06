@@ -13,7 +13,7 @@ public class Progression {
         int minCommonDifference = 1;
         int maxCommonDifference = 5;
         int firstElementOfArray = 0;
-        while(correctAnswerCount < roundCount) {
+        while (correctAnswerCount < roundCount) {
             int progressionLength = Engine.getRandomInt(minProgressionLength, maxProgressionLength);
             int[] progression = new int[progressionLength];
             int hiddenElement = Engine.getRandomInt(firstElementOfArray, progressionLength - 1);
@@ -23,7 +23,7 @@ public class Progression {
                 if (i == firstElementOfArray) {
                     progression[i] = Engine.getRandomInt();
                 } else {
-                    progression[i] = progression[i-1] + progressionCommonDifference;
+                    progression[i] = progression[i - 1] + progressionCommonDifference;
                 }
                 String progressionElement = "";
                 if (i == hiddenElement) {

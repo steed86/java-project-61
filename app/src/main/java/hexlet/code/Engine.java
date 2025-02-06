@@ -1,7 +1,6 @@
 package hexlet.code;
 
 import java.util.Scanner;
-import java.lang.Math;
 
 public class Engine {
 
@@ -18,13 +17,13 @@ public class Engine {
         int min = 1;
         int max = 99;
         int range = max - min + 1;
-        return (int)(Math.random() * range) + min;
+        return (int) (Math.random() * range) + min;
     }
 
     public static int getRandomInt(int min, int max) {
         //перегруженный метод генерации случайного числа - из заданного промежутка
         int range = max - min + 1;
-        return (int)(Math.random() * range) + min;
+        return (int) (Math.random() * range) + min;
     }
 
 
@@ -53,7 +52,7 @@ public class Engine {
     }
 
     public static boolean compareAnswers(String correctAnswer, String userAnswer) {
-         return userAnswer.equals(correctAnswer);
+        return userAnswer.equals(correctAnswer);
     }
 
     public static boolean compareAnswers(int correctAnswer, int userAnswer) {

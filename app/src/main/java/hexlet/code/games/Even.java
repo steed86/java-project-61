@@ -8,7 +8,7 @@ public class Even {
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
         boolean isAnswerCorrect = true;
         int correctAnswerCount = 0;
-        while(correctAnswerCount < roundCount) {
+        while (correctAnswerCount < roundCount) {
             //Задаём интервал для генерирования
             int questionNumber = Engine.getRandomInt();
             String correctAnswer;
